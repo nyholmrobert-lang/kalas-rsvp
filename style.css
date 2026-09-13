@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root{
+  --pink:#f7c6d9; --rose:#b94f78; --ink:#4a3440; --cream:#fff9fb; --line:#ead5df;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; min-height:100vh; display:flex; justify-content:center;
+  padding:28px 16px; color:var(--ink); font-family:"DM Sans",sans-serif;
+  background:radial-gradient(circle at 15% 10%,#fff 0 8%,transparent 9%),
+             linear-gradient(145deg,#fff5f9,#f8e8f0 55%,#fff9fb);
+}
+.card{
+  width:min(100%,620px); background:rgba(255,255,255,.9); border:1px solid #f0dce5;
+  border-radius:30px; padding:34px clamp(22px,6vw,52px); text-align:center;
+  box-shadow:0 20px 60px rgba(122,64,91,.13); position:relative; overflow:hidden;
+}
+.card:before,.card:after{content:"";position:absolute;border-radius:50%;background:#fbe1eb;opacity:.7}
+.card:before{width:170px;height:170px;left:-90px;top:-80px}.card:after{width:130px;height:130px;right:-65px;bottom:40px}
+.number{
+  margin:0 auto 4px; width:112px;height:112px;border-radius:50%;display:grid;place-items:center;
+  background:var(--pink); color:white; font-family:"Playfair Display",serif; font-size:82px;
+  line-height:1; box-shadow:0 10px 25px rgba(185,79,120,.18); transform:rotate(-4deg);
+}
+.sparkles{color:var(--rose);font-size:18px;margin:6px 0 14px}
+.eyebrow{font-size:12px;letter-spacing:3px;font-weight:700;color:var(--rose);margin:0}
+h1{font-family:"Playfair Display",serif;font-size:clamp(38px,8vw,60px);line-height:.98;margin:10px 0 16px;color:#4b3040}
+.intro{font-size:16px;line-height:1.6;margin:0 auto 25px;max-width:440px}
+.details{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0 0 28px
+}
+.details div{background:#fff5f8;border:1px solid var(--line);border-radius:18px;padding:14px 8px}
+.details span{display:block;font-size:20px}.details strong{display:block;font-size:12px;margin-top:5px;color:var(--rose)}
+.details p{margin:4px 0 0;font-size:13px}
+form{text-align:left;background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px}
+h2{text-align:center;font-family:"Playfair Display",serif;font-size:27px;margin:0 0 18px}
+label,legend{font-size:14px;font-weight:700}
+label{display:block;margin:0 0 15px}
+input,textarea{
+  width:100%;margin-top:7px;padding:12px 13px;border:1px solid #dfc8d3;border-radius:12px;
+  font:inherit;color:var(--ink);background:#fffdfd;outline:none
+}
+input:focus,textarea:focus{border-color:var(--rose);box-shadow:0 0 0 3px #fbe5ee}
+fieldset{border:0;padding:0;margin:0 0 16px}
+.choice{font-weight:500;background:#fff7fa;border:1px solid var(--line);padding:12px;border-radius:12px}
+.choice input{width:auto;margin:0 8px 0 0}
+button{
+  width:100%;border:0;border-radius:14px;padding:14px;background:var(--rose);color:white;
+  font:700 15px "DM Sans",sans-serif;cursor:pointer;box-shadow:0 8px 18px rgba(185,79,120,.2)
+}
+button:disabled{opacity:.6;cursor:wait}
+#status{text-align:center;margin:12px 0 0;font-size:14px;min-height:20px}
+.footer{font-size:13px;margin:20px 0 0;color:#8b6978}
+@media(max-width:520px){.details{grid-template-columns:1fr}.card{padding:26px 18px}.number{width:96px;height:96px;font-size:70px}}

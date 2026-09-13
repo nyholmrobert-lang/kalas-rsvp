@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>[NAMN] fyller 9 år! 🎀</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <div class="number">9</div>
+    <div class="sparkles">✦　✧　✦</div>
+    <p class="eyebrow">DU ÄR BJUDEN!</p>
+    <h1>[NAMN]<br>fyller 9 år!</h1>
+    <p class="intro">Välkommen att fira en härlig födelsedag tillsammans med oss! 🎀</p>
+
+    <section class="details">
+      <div><span>📅</span><strong>Datum</strong><p>[DATUM]</p></div>
+      <div><span>🕐</span><strong>Tid</strong><p>[TID]</p></div>
+      <div><span>📍</span><strong>Plats</strong><p>[PLATS]</p></div>
+    </section>
+
+    <form id="rsvpForm">
+      <h2>💌 OSA</h2>
+      <label>Barnets namn
+        <input name="childName" required autocomplete="name" placeholder="Skriv barnets namn">
+      </label>
+
+      <fieldset>
+        <legend>Kommer hon på kalaset?</legend>
+        <label class="choice"><input type="radio" name="attendance" value="Ja, hon kommer!" required> 🎉 Ja, hon kommer!</label>
+        <label class="choice"><input type="radio" name="attendance" value="Tyvärr kan hon inte komma"> 😢 Tyvärr kan hon inte komma</label>
+      </fieldset>
+
+      <div id="extraFields">
+        <label>Förälders namn
+          <input name="parentName" autocomplete="name" placeholder="Ditt namn">
+        </label>
+        <label>Telefonnummer
+          <input name="phone" type="tel" autocomplete="tel" placeholder="07x-xxx xx xx">
+        </label>
+        <label>Allergier eller specialkost?
+          <input name="diet" placeholder="Skriv gärna 'Nej' om inget finns">
+        </label>
+        <label>Något annat vi behöver veta?
+          <textarea name="notes" rows="3" placeholder="Valfritt"></textarea>
+        </label>
+      </div>
+
+      <button type="submit">Skicka svar 🎀</button>
+      <p id="status" role="status"></p>
+    </form>
+
+    <p class="footer">Tack för ditt svar! 💕</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
