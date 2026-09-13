@@ -1,5 +1,5 @@
 // Klistra in din Google Apps Script Web App URL här efter att du publicerat scriptet.
-const SCRIPT_URL = "KLISTRA_IN_DIN_GOOGLE_APPS_SCRIPT_URL_HÄR";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzvs1Do6VkqCIo4JkFO1wH8HWU1BjUu_-SlciXxSzCFrYpER9jXr_Sv02SK2FJSCs-l-A/exec";
 
 const form = document.getElementById("rsvpForm");
 const extra = document.getElementById("extraFields");
