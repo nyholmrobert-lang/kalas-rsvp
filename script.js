@@ -1,4 +1,3 @@
-// Klistra in din Google Apps Script Web App URL här efter att du publicerat scriptet.
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzvs1Do6VkqCIo4JkFO1wH8HWU1BjUu_-SlciXxSzCFrYpER9jXr_Sv02SK2FJSCs-l-A/exec";
 
 const form = document.getElementById("rsvpForm");
@@ -17,15 +16,10 @@ extra.style.display = "none";
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
-  if (SCRIPT_URL.includes("KLISTRA_IN")) {
-    status.textContent = "Formuläret är inte kopplat till svarstabellen ännu.";
-    return;
-  }
   const data = Object.fromEntries(new FormData(form).entries());
   const button = form.querySelector("button");
   button.disabled = true;
   status.textContent = "Skickar ditt svar…";
-
   try {
     await fetch(SCRIPT_URL, {
       method: "POST",
