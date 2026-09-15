@@ -3,11 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Alicia fyller 9 år! 🪩🎳</title>
+  <title>Alicia fyller 9 år! 🎳🎀</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <main class="card">
+
     <div class="hero">
       <div class="bowling-ball">🎳</div>
       <div class="number">9</div>
@@ -15,55 +17,160 @@
     </div>
 
     <p class="eyebrow">DU ÄR BJUDEN!</p>
+
     <h1>Alicia<br>fyller 9 år!</h1>
+
     <div class="strike">STRIKE! 🎳</div>
-    <p class="intro">Det blir bowlingkalas med mat, mat och massor av skoj! 💕</p>
+
+    <p class="intro">
+      Det blir bowlingkalas med discotema, mat och massor av skoj! 🎳✨
+    </p>
 
     <section class="details">
-      <div><span>📅</span><strong>Datum</strong><p>[DATUM]</p></div>
-      <div><span>🕐</span><strong>Tid</strong><p>[TID]</p></div>
-      <div><span>📍</span><strong>Plats</strong><p>BowlingBull i Jakobsberg<br>Hammarvägen 61, Järfälla</p></div>
+
+      <div>
+        <span>📅</span>
+        <strong>Datum</strong>
+        <p>26 september</p>
+      </div>
+
+      <div>
+        <span>🕐</span>
+        <strong>Tid</strong>
+        <p>11:30</p>
+      </div>
+
+      <div>
+        <span>📍</span>
+        <strong>Plats</strong>
+        <p>
+          BowlingBull i Jakobsberg<br>
+          Hammarvägen 61, Järfälla
+        </p>
+      </div>
+
     </section>
 
     <section class="party">
-      <div>🎳 <b>Bowling</b></div>
-      <div>🍕 <b>Mat</b></div>
-      <div>✨ <b>Party!</b></div>
+
+      <div>
+        🎳 <b>Bowling</b>
+      </div>
+
+      <div>
+        🍕 <b>Mat</b>
+      </div>
+
+      <div>
+        ✨ <b>Party!</b>
+      </div>
+
     </section>
 
+    <div class="arrival">
+      <span>👟</span>
+      <div>
+        <strong>Samling kl. 11:15</strong><br>
+        <small>
+          Kom gärna 15 minuter före bowlingens start så att tjejerna
+          hinner välja bowlingskor i lugn och ro.
+        </small>
+      </div>
+    </div>
+
     <form id="rsvpForm">
+
       <h2>💌 OSA</h2>
-      <label>Barnets namn
-        <input name="childName" required autocomplete="name" placeholder="Skriv barnets namn">
+
+      <label>
+        Barnets namn
+        <input
+          name="childName"
+          required
+          autocomplete="name"
+          placeholder="Skriv barnets namn"
+        >
       </label>
 
       <fieldset>
+
         <legend>Kommer hon på kalaset?</legend>
-        <label class="choice"><input type="radio" name="attendance" value="Ja, hon kommer!" required> 🎉 Ja, hon kommer!</label>
-        <label class="choice"><input type="radio" name="attendance" value="Tyvärr kan hon inte komma"> 😢 Tyvärr kan hon inte komma</label>
+
+        <label class="choice">
+          <input
+            type="radio"
+            name="attendance"
+            value="Ja, hon kommer!"
+            required
+          >
+          🎉 Ja, hon kommer!
+        </label>
+
+        <label class="choice">
+          <input
+            type="radio"
+            name="attendance"
+            value="Tyvärr kan hon inte komma"
+          >
+          😢 Tyvärr kan hon inte komma
+        </label>
+
       </fieldset>
 
       <div id="extraFields">
-        <label>Förälders namn
-          <input name="parentName" autocomplete="name" placeholder="Ditt namn">
+
+        <label>
+          Förälders namn
+          <input
+            name="parentName"
+            autocomplete="name"
+            placeholder="Ditt namn"
+          >
         </label>
-        <label>Telefonnummer
-          <input name="phone" type="tel" autocomplete="tel" placeholder="07x-xxx xx xx">
+
+        <label>
+          Telefonnummer
+          <input
+            name="phone"
+            type="tel"
+            autocomplete="tel"
+            placeholder="07x-xxx xx xx"
+          >
         </label>
-        <label>Allergier eller specialkost?
-          <input name="diet" placeholder="Skriv gärna 'Nej' om inget finns">
+
+        <label>
+          Allergier eller specialkost?
+          <input
+            name="diet"
+            placeholder="Skriv gärna 'Nej' om inget finns"
+          >
         </label>
-        <label>Något annat vi behöver veta?
-          <textarea name="notes" rows="3" placeholder="Valfritt"></textarea>
+
+        <label>
+          Något annat vi behöver veta?
+          <textarea
+            name="notes"
+            rows="3"
+            placeholder="Valfritt"
+          ></textarea>
         </label>
+
       </div>
 
-      <button type="submit">Skicka svar 🎳</button>
+      <button type="submit">
+        Skicka svar 🎳
+      </button>
+
       <p id="status" role="status"></p>
+
     </form>
 
-    <p class="footer">Vi ser fram emot att fira tillsammans! 💕</p>
+    <p class="footer">
+      Vi ser fram emot att fira tillsammans! 💕
+    </p>
+
   </main>
+
   <script src="script.js"></script>
 </body>
 </html>
